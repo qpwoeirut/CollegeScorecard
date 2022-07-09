@@ -33,7 +33,7 @@ def make_query(filters: dict[str,], fields: list = None) -> list[dict]:
     return all_results
 
 
-def get_school_list() -> list[dict[str, ]]:
+def get_school_list() -> list[dict[str,]]:
     try:
         with open("unfiltered.json") as f:
             return json.loads(f.read().strip())
@@ -48,7 +48,7 @@ def get_school_list() -> list[dict[str, ]]:
                 "school.city", "school.state",
                 "school.school_url",
                 "school.degree_urbanization"
-    
+
                 "latest.cost.tuition.in_state", "latest.cost.tuition.out_of_state",
 
                 "latest.student.size",
@@ -75,21 +75,21 @@ def get_school_list() -> list[dict[str, ]]:
         return schools
 
 
-def filter_schools(schools: list[dict[str, ]]) -> list[dict[str, ]]:
+def filter_schools(schools: list[dict[str,]]) -> list[dict[str,]]:
     # API can't filter based on these values
     filtered_schools = []
     for school in schools:  # could be done with a list comprehension, but using loops allows for printing stuff out
         if school["latest.academics.program.degree.computer"] == 0:
-            print(f"Filtered {school['school.name']}.".ljust(65, '.') + " no Bachelors program for CS")
+            print(f"Filtered {school['school.name']}.".ljust(70, '.') + " no Bachelors program for CS")
             continue
 
         median_earnings_6_yrs = school["latest.earnings.6_yrs_after_entry.median"]
         if median_earnings_6_yrs is None:
-            print(f"Filtered {school['school.name']}.".ljust(65, '.') + " no median earnings data")
+            print(f"Filtered {school['school.name']}.".ljust(70, '.') + " no median earnings data")
             continue
         if median_earnings_6_yrs < 50000:
             print(
-                f"Filtered {school['school.name']}.".ljust(65, '.') +
+                f"Filtered {school['school.name']}.".ljust(70, '.') +
                 f" median earnings 6 years after entry (${median_earnings_6_yrs}) is < $50000")
             continue
 
@@ -100,10 +100,9 @@ def filter_schools(schools: list[dict[str, ]]) -> list[dict[str, ]]:
 def main():
     schools = get_school_list()
     schools.sort(key=lambda s: s["school.name"])
+    print(f"Total schools: {len(schools)}\n\n")
     filtered = filter_schools(schools)
-    print('\n' * 4)
-    print(f"Total schools: {len(schools)}")
-    print(f"Schools remaining: {len(filtered)}")
+    print(f"\n\nSchools remaining: {len(filtered)}")
     for school in filtered:
         print(school["school.name"])
         for k, v in school.items():
@@ -111,7 +110,6 @@ def main():
                 v = "https://" + v
             print(f"{k}: {v}")
         print('=' * 80, '\n')
-
 
 
 if __name__ == '__main__':
