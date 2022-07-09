@@ -1,18 +1,18 @@
 Name,City,State,Website,Setting,In-state Tuition,Out-of-state Tuition,Undergrad Size,6-year Median Salary,Graduation Rate,Admission Rate,% of CS Degrees,SAT 25th % Critical Reading,SAT 75th % Critical Reading,SAT 25th % Math,SAT 75th % Math,SAT 25th % Writing,SAT 75th % Writing,SAT Average
 Massachusetts Institute of Technology,Cambridge,MA,https://web.mit.edu/,city,53450,53450,4360,112623,0.9535,0.0726,0.3566,730,780,780,800,690,780,1550
 Stanford University,Stanford,CA,https://www.stanford.edu/,suburb,56169,56169,6366,88873,0.9636,0.0519,0.1797,700,770,720,800,690,780,1491
-California State University-Los Angeles,Los Angeles,CA,https://www.calstatela.edu/,city,6781,18661,22820,42517,0.6702,0.7648,0.0423,440,530,430,530,,,964
+University of California-Los Angeles,Los Angeles,CA,https://www.ucla.edu/,city,13249,43003,31636,55427,0.9246,0.1433,0.03,,,,,590,730,
 Harvard University,Cambridge,MA,https://www.harvard.edu/,city,54002,54002,6099,77816,0.9767,0.0501,0.0998,720,780,740,800,710,790,1520
 Princeton University,Princeton,NJ,https://www.princeton.edu/,city,48502,48502,4688,84713,0.974,0.0563,0.1246,710,770,740,800,710,790,1506
-University of Illinois Chicago,Chicago,IL,https://www.uic.edu/,city,14098,28448,21702,49099,0.6694,0.7263,0.0795,510,610,520,640,480,590,1159
-Clarks Summit University,Clarks Summit,PA,https://www.clarkssummitu.edu/,suburb,26082,26082,483,32428,0.5086,0.6189,0,,,,,,,
+University of Chicago,Chicago,IL,https://www.uchicago.edu/,city,60552,60552,7010,62671,0.9413,0.0731,0.0524,730,770,770,800,700,780,1537
+University of Pennsylvania,Philadelphia,PA,https://www.upenn.edu/,city,60042,60042,10507,80445,0.9651,0.0898,0.0712,710,770,750,800,690,780,1517
 Yale University,New Haven,CT,https://www.yale.edu/,city,57700,57700,4701,72046,0.9771,0.0653,0.0725,720,780,740,800,710,790,1520
 Rice University,Houston,TX,https://www.rice.edu/,city,51107,51107,4052,63654,0.9361,0.1089,0.1232,710,770,750,800,680,770,1533
 University of California-Berkeley,Berkeley,CA,https://www.berkeley.edu/,city,14312,44066,30796,65914,0.9295,0.1748,0.1113,650,740,660,790,630,760,1437
 University of Maryland-College Park,College Park,MD,https://www.umd.edu/,suburb,10779,36891,30214,59719,0.8257,0.5096,0.1424,630,720,640,760,,,1391
 University of California-Irvine,Irvine,CA,https://www.uci.edu/,city,13753,43507,29627,52679,0.866,0.2992,0.1068,600,680,630,750,510,620,1339
 University of California-San Diego,La Jolla,CA,https://www.ucsd.edu/,city,14648,44402,31827,56844,0.8884,0.3661,0.0586,620,710,650,770,600,710,1387
-Weill Medical College of Cornell University,New York,NY,https://weill.cornell.edu/,city,,,,78779,,,,,,,,,,
+Cornell University,Ithaca,NY,https://www.cornell.edu/,city,59282,59282,14741,78779,0.9489,0.1071,0.1282,680,750,720,790,,,1480
 University of California-Davis,Davis,CA,https://ucdavis.edu/,suburb,14597,44351,31142,54621,0.8825,0.4635,0.0342,570,670,590,730,530,650,1299
 Carnegie Mellon University,Pittsburgh,PA,https://www.cmu.edu/,city,58810,58810,6539,87824,0.8777,0.1727,0.1372,700,760,760,800,670,760,1513
 University of California-Santa Barbara,Santa Barbara,CA,https://www.ucsb.edu/,suburb,14406,44160,23166,51496,0.849,0.367,0.0217,620,710,610,750,510,630,1369

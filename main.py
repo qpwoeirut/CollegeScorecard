@@ -6,6 +6,8 @@ import requests
 with open(".env") as f:
     API_KEY = f.read().strip()
 
+SAT_CUTOFF = 1300
+SALARY_CUTOFF = 60000
 ENDPOINT = f"https://api.data.gov/ed/collegescorecard/v1/schools?api_key={API_KEY}&per_page=50"
 KEY_MAPPING = {
     "school.name": "Name",
@@ -74,36 +76,37 @@ def translate_locale_value(locale: int) -> str:
 
 
 def get_school_list(filters: dict[str,]) -> list[dict[str,]]:
-    return make_query(filters,
-                      [
-                          "school.name",
-                          "school.city", "school.state",
-                          "school.school_url",
-                          "school.type",
-                          "school.locale",
+    return make_query(
+        filters,
+        [
+            "school.name",
+            "school.city", "school.state",
+            "school.school_url",
+            "school.type",
+            "school.locale",
 
-                          "latest.cost.tuition.in_state", "latest.cost.tuition.out_of_state",
+            "latest.cost.tuition.in_state", "latest.cost.tuition.out_of_state",
 
-                          "latest.student.size",
+            "latest.student.size",
 
-                          "latest.earnings.6_yrs_after_entry.median",
-                          # "latest.earnings.7_yrs_after_entry.mean_earnings",
-                          # "latest.earnings.8_yrs_after_entry.mean_earnings", "latest.earnings.8_yrs_after_entry.median_earnings",
-                          # "latest.earnings.9_yrs_after_entry.mean_earnings", "latest.earnings.10_yrs_after_entry.median",
+            "latest.earnings.6_yrs_after_entry.median",
+            # "latest.earnings.7_yrs_after_entry.mean_earnings",
+            # "latest.earnings.8_yrs_after_entry.mean_earnings", "latest.earnings.8_yrs_after_entry.median_earnings",
+            # "latest.earnings.9_yrs_after_entry.mean_earnings", "latest.earnings.10_yrs_after_entry.median",
 
-                          "latest.completion.consumer_rate",
-                          # "latest.completion.title_iv.completed_by.4yrs", "latest.completion.title_iv.completed_by.6yrs",
+            "latest.completion.consumer_rate",
+            # "latest.completion.title_iv.completed_by.4yrs", "latest.completion.title_iv.completed_by.6yrs",
 
-                          "latest.admissions.test_requirements",
-                          "latest.admissions.admission_rate.consumer_rate",
-                          "latest.admissions.sat_scores",  # only took the SAT, so that's all I care about
+            "latest.admissions.test_requirements",
+            "latest.admissions.admission_rate.consumer_rate",
+            "latest.admissions.sat_scores",  # only took the SAT, so that's all I care about
 
-                          "latest.academics.program.degree.computer",
-                          "latest.academics.program_percentage.computer",
+            "latest.academics.program.degree.computer",
+            "latest.academics.program_percentage.computer",
 
-                          # "latest.programs.cip_4_digit"  # Stanford's CS is 1107
-                      ]
-                      )
+            # "latest.programs.cip_4_digit"  # Stanford's CS is 1107
+        ]
+    )
 
 
 def filter_schools(schools: list[dict[str,]]) -> list[dict[str,]]:
@@ -111,24 +114,22 @@ def filter_schools(schools: list[dict[str,]]) -> list[dict[str,]]:
     filtered_schools = []
     for school in schools:  # could be done with a list comprehension, but using loops allows for printing stuff out
         if school["latest.academics.program_percentage.computer"] == 0:
-            print(f"Filtered {school['school.name']}.".ljust(70, '.') + " no Bachelors program for CS")
+            # print(f"Filtered {school['school.name']}.".ljust(70, '.') + " no Bachelors program for CS")
             continue
 
         median_earnings_6_yrs = school["latest.earnings.6_yrs_after_entry.median"]
         if median_earnings_6_yrs is None:
-            print(f"Filtered {school['school.name']}.".ljust(70, '.') + " no median earnings data")
+            # print(f"Filtered {school['school.name']}.".ljust(70, '.') + " no median earnings data")
             continue
-        if median_earnings_6_yrs < 50000:
-            print(
-                f"Filtered {school['school.name']}.".ljust(70, '.') +
-                f" median earnings 6 years after entry (${median_earnings_6_yrs}) is < $50000")
+        if median_earnings_6_yrs < SALARY_CUTOFF:
+            # print(
+            #     f"Filtered {school['school.name']}.".ljust(70, '.') +
+            #     f" median earnings 6 years after entry (${median_earnings_6_yrs}) is < ${SALARY_CUTOFF}")
             continue
 
         sat_score = school["latest.admissions.sat_scores.average.overall"]
-        if sat_score is not None and sat_score < 1200:
-            print(
-                f"Filtered {school['school.name']}.".ljust(70, '.') +
-                f" SAT average ({sat_score}) is < 1200")
+        if sat_score is not None and sat_score < SAT_CUTOFF:
+            # print(f"Filtered {school['school.name']}.".ljust(70, '.') + f" SAT average ({sat_score}) is < {SAT_CUTOFF}")
             continue
 
         filtered_schools.append(school)
@@ -137,9 +138,6 @@ def filter_schools(schools: list[dict[str,]]) -> list[dict[str,]]:
 
 def transform_school(school: dict[str,]) -> dict[str,]:
     school = {KEY_MAPPING[k]: v for k, v in school.items() if k in KEY_MAPPING}
-    # school["Location"] = f"{school['City']}, {school['State']}"
-    # del school["City"]
-    # del school["State"]
 
     school["Setting"] = translate_locale_value(school["Setting"])
     if not school["Website"].startswith("http"):
@@ -150,7 +148,6 @@ def transform_school(school: dict[str,]) -> dict[str,]:
 def general_search() -> list[dict[str,]]:
     schools = get_school_list({"school.operating": 1, "latest.student.size__range": "500.."})
     schools.sort(key=lambda s: s["school.name"])
-    print(f"Total schools: {len(schools)}\n\n")
     filtered = [transform_school(school) for school in filter_schools(schools)]
     return filtered
 
@@ -158,14 +155,20 @@ def general_search() -> list[dict[str,]]:
 def search_from_list(names: list[str]) -> list[dict[str,]]:
     schools = []
     for name in names:
-        school = get_school_list({"school.name": name})[0]
+        results = get_school_list({"school.name": name})
+        # the search is autocompleted, so make sure we get the value we want
+        try:
+            school = results[0] if len(results) == 1 else [r for r in results if r["school.name"] == name][0]
+        except IndexError:
+            raise ValueError(f"{name} not found. found {[s['school.name'] for s in results]} instead")
         schools.append(school)  # couldn't get multivalue filter working for school.name
     return [transform_school(school) for school in schools]
 
 
 def print_schools(schools: list[dict[str,]]):
+    print(f"Total schools: {len(schools)}\n\n")
     for school in schools:
-        print(school["Name"])
+        print(school["Name"] if "Name" in school else school["school.name"])
         for k, v in school.items():
             print(f"{k}: {v}")
         print('=' * 80, '\n')
@@ -181,37 +184,13 @@ def save_schools(filename: str, schools: list[dict[str,]]):
 
 
 def main():
-    schools = search_from_list([
-        "Massachusetts Institute of Technology",
-        "Stanford University",
-        "University of California-Los Angeles",
-        "Harvard University",
-        "Princeton University",
-        "University of Chicago",
-        "University of Pennsylvania",
-        "Yale University",
-        "Rice University",
-        "University of California-Berkeley",
-        "University of Maryland-College Park",
-        "University of California-Irvine",
-        "University of California-San Diego",
-        "Cornell University",
-        "University of California-Davis",
-        "Carnegie Mellon University",
-        "University of California-Santa Barbara",
-        "California Institute of Technology",
-        "Johns Hopkins University",
-        "University of Michigan-Ann Arbor",
-        "The University of Texas at Austin",
-        "Georgia Tech",
-        "Purdue University-Main Campus",
-        "UIUC",
-        "University of Washington-Seattle Campus",
-        "Ohio State University-Main Campus",
-        "University of Wisconsin-Madison",
-    ])
-
+    with open("school_list.txt") as f:
+        school_list = [line.strip() for line in f]
+    schools = search_from_list(school_list)
     save_schools("ranking.csv", schools)
+
+    schools = general_search()
+    save_schools("general.csv", schools)
 
 
 if __name__ == '__main__':

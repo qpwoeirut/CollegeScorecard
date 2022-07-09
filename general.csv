@@ -1,0 +1,63 @@
+Name,City,State,Website,Setting,In-state Tuition,Out-of-state Tuition,Undergrad Size,6-year Median Salary,Graduation Rate,Admission Rate,% of CS Degrees,SAT 25th % Critical Reading,SAT 75th % Critical Reading,SAT 25th % Math,SAT 75th % Math,SAT 25th % Writing,SAT 75th % Writing,SAT Average
+Boston College,Chestnut Hill,MA,https://www.bc.edu/,city,60202,60202,9681,70858,0.9125,0.2638,0.0422,660,730,670,770,640,730,1433
+Brown University,Providence,RI,https://www.brown.edu/,city,60696,60696,6632,60341,0.9612,0.0767,0.1228,710,770,730,790,690,780,1508
+Bucknell University,Lewisburg,PA,https://www.bucknell.edu/,town,58202,58202,3684,70178,0.8972,0.3753,0.0188,620,700,630,730,590,690,1353
+California Institute of Technology,Pasadena,CA,https://www.caltech.edu/,city,56862,56862,901,129420,0.9253,0.0669,0.3527,740,780,790,800,730,800,1566
+California Polytechnic State University-San Luis Obispo,San Luis Obispo,CA,https://calpoly.edu/,suburb,10071,25971,21451,66662,0.8452,0.3843,0.0394,610,690,610,720,,,1325
+Carnegie Mellon University,Pittsburgh,PA,https://www.cmu.edu/,city,58810,58810,6539,87824,0.8777,0.1727,0.1372,700,760,760,800,670,760,1513
+Case Western Reserve University,Cleveland,OH,https://www.case.edu/,city,52948,52948,5360,65156,0.8439,0.3027,0.1034,640,730,700,790,620,720,1445
+Claremont McKenna College,Claremont,CA,https://www.cmc.edu/,suburb,56475,56475,1262,80781,0.9233,0.1334,0.0779,660,730,670,770,690,760,1436
+College of the Holy Cross,Worcester,MA,https://www.holycross.edu/,city,54770,54770,2962,64279,0.9206,0.3794,0.0184,640,710,650,720,,,1371
+Colorado School of Mines,Golden,CO,https://www.mines.edu/,suburb,19100,39800,5173,76135,0.7848,0.5497,0.1181,620,700,650,740,560,650,1372
+Columbia University in the City of New York,New York,NY,https://www.columbia.edu/,city,61671,61671,8148,79434,0.9299,0.0666,0.1358,720,770,740,800,690,790,1517
+Cornell University,Ithaca,NY,https://www.cornell.edu/,city,59282,59282,14741,78779,0.9489,0.1071,0.1282,680,750,720,790,,,1480
+Dartmouth College,Hanover,NH,https://www.dartmouth.edu/,town,60117,60117,4146,70635,0.9625,0.0922,0.0888,710,770,730,790,670,780,1500
+Duke University,Durham,NC,https://www.duke.edu/,city,57633,57633,6650,77260,0.9554,0.0774,0.1213,720,770,750,800,690,780,1530
+Embry-Riddle Aeronautical University-Worldwide,Daytona Beach,FL,https://worldwide.erau.edu/,city,10296,10296,10070,62242,0.3613,0.6272,0.0954,,,,,,,
+Emory University,Atlanta,GA,https://www.emory.edu/,city,53868,53868,6978,61633,0.9207,0.1917,0.0186,680,740,700,790,640,730,1459
+Excelsior College,Albany,NY,https://www.excelsior.edu/,city,,,19624,61752,0.3458,1,0.0107,,,,,,,
+George Washington University,Washington,DC,https://www.gwu.edu/,city,58640,58640,11106,62584,0.8105,0.4304,0.0516,640,720,630,730,600,690,1385
+Georgetown University,Washington,DC,https://www.georgetown.edu/,city,57928,57928,7119,71107,0.9405,0.1681,0.0221,690,760,690,790,,,1473
+Georgia Institute of Technology-Main Campus,Atlanta,GA,https://www.gatech.edu/,city,12852,33964,15743,78659,0.8843,0.2134,0.1812,670,740,700,790,640,730,1465
+Harvard University,Cambridge,MA,https://www.harvard.edu/,city,54002,54002,6099,77816,0.9767,0.0501,0.0998,720,780,740,800,710,790,1520
+Harvey Mudd College,Claremont,CA,https://www.hmc.edu/,suburb,58660,58660,827,112059,0.9447,0.1796,0.226,720,770,770,800,680,760,1534
+Illinois Institute of Technology,Chicago,IL,https://www.iit.edu/,city,50490,50490,2974,63663,0.7399,0.6066,0.2087,570,670,630,720,,,1311
+Johns Hopkins University,Baltimore,MD,https://www.jhu.edu/,city,54160,54160,5752,75418,0.9317,0.1106,0.0705,720,760,750,800,670,770,1532
+Lafayette College,Easton,PA,https://www.lafayette.edu/,suburb,55742,55742,2489,66921,0.8867,0.3557,0.0367,620,710,630,730,590,690,1360
+Lehigh University,Bethlehem,PA,https://www.lehigh.edu/,city,55260,55260,5191,79832,0.8755,0.4954,0.0995,610,693,650,740,,,1366
+Loyola University Maryland,Baltimore,MD,https://www.loyola.edu/,city,51100,51100,3813,61084,0.7948,0.8024,0.024,,,,,,,
+Manhattan College,Riverdale,NY,https://www.manhattan.edu/,city,45880,45880,3352,66043,0.7281,0.7765,0.0276,,,,,480,590,
+Massachusetts Institute of Technology,Cambridge,MA,https://web.mit.edu/,city,53450,53450,4360,112623,0.9535,0.0726,0.3566,730,780,780,800,690,780,1550
+Missouri University of Science and Technology,Rolla,MO,https://www.mst.edu/,town,10165,28116,6050,65427,0.6862,0.8146,0.1174,598,670,640,720,490,640,1328
+Neumont College of Computer Science,Salt Lake City,UT,https://www.neumont.edu/,city,25440,25440,529,69186,0.6471,0.9069,1,,,,,,,
+New York University,New York,NY,https://www.nyu.edu/,city,54880,54880,27276,60407,0.8433,0.2109,0.0735,670,740,700,800,630,730,1458
+Northeastern University,Boston,MA,https://www.northeastern.edu/,city,55452,55452,15130,65632,0.8775,0.2048,0.0802,690,750,720,790,640,730,1492
+Northeastern University Professional Programs,Boston,MA,https://www.northeastern.edu/,city,,,2004,65632,0.5418,,0.0726,,,,,,,
+Northwestern University,Evanston,IL,https://www.northwestern.edu/,city,58701,58701,8401,67867,0.9513,0.0931,0.0613,700,760,730,790,680,770,1505
+Princeton University,Princeton,NJ,https://www.princeton.edu/,city,48502,48502,4688,84713,0.974,0.0563,0.1246,710,770,740,800,710,790,1506
+Providence College,Providence,RI,https://www.providence.edu/,city,54388,54388,4242,62565,0.8388,0.5386,0.0105,610,680,600,680,,,1301
+Quinnipiac University,Hamden,CT,https://www.qu.edu/,suburb,50760,50760,6787,60948,0.7629,0.8239,0.0069,,,,,490,590,
+Rensselaer Polytechnic Institute,Troy,NY,https://www.rpi.edu/,city,57012,57012,6265,77899,0.855,0.5726,0.1774,620,720,680,780,,,1410
+Rice University,Houston,TX,https://www.rice.edu/,city,51107,51107,4052,63654,0.9361,0.1089,0.1232,710,770,750,800,680,770,1533
+Rose-Hulman Institute of Technology,Terre Haute,IN,https://www.rose-hulman.edu/,city,52914,52914,1969,79785,0.8143,0.7662,0.1535,610,700,650,760,550,660,1371
+Santa Clara University,Santa Clara,CA,https://www.scu.edu/,city,52998,52998,5606,77174,0.9072,0.5072,0.0071,630,700,640,750,,,1367
+Southern Methodist University,Dallas,TX,https://www.smu.edu/,suburb,58540,58540,6793,60398,0.789,0.5267,0.027,630,710,620,740,600,690,1388
+Stanford University,Stanford,CA,https://www.stanford.edu/,suburb,56169,56169,6366,88873,0.9636,0.0519,0.1797,700,770,720,800,690,780,1491
+Stevens Institute of Technology,Hoboken,NJ,https://www.stevens.edu/,suburb,55952,55952,3787,82237,0.8565,0.5306,0.1202,640,710,680,770,,,1415
+Trinity College,Hartford,CT,https://www.trincoll.edu/,city,59050,59050,2194,61447,0.8307,0.3604,0.0389,,,,,,,
+Union College,Schenectady,NY,https://www.union.edu/,city,59502,59502,2035,63542,0.8677,0.4126,0.02,600,680,610,720,,,1339
+University of California-Berkeley,Berkeley,CA,https://www.berkeley.edu/,city,14312,44066,30796,65914,0.9295,0.1748,0.1113,650,740,660,790,630,760,1437
+University of Chicago,Chicago,IL,https://www.uchicago.edu/,city,60552,60552,7010,62671,0.9413,0.0731,0.0524,730,770,770,800,700,780,1537
+University of Michigan-Ann Arbor,Ann Arbor,MI,https://umich.edu/,city,15948,52266,31189,62027,0.9248,0.2611,0.1429,660,740,680,780,640,730,1445
+University of Notre Dame,Notre Dame,IN,https://www.nd.edu/,suburb,57699,57699,8854,76123,0.9629,0.1899,0.0607,690,760,710,790,,,1489
+University of Pennsylvania,Philadelphia,PA,https://www.upenn.edu/,city,60042,60042,10507,80445,0.9651,0.0898,0.0712,710,770,750,800,690,780,1517
+University of Richmond,University of Richmond,VA,https://www.richmond.edu/,city,56860,56860,3304,61214,0.8436,0.309,0.0629,630,710,650,750,610,700,1394
+University of Southern California,Los Angeles,CA,https://www.usc.edu/,city,60275,60275,19521,65748,0.9271,0.1611,0.0522,660,740,680,790,650,750,1441
+University of Virginia-Main Campus,Charlottesville,VA,https://www.virginia.edu/,suburb,18960,52843,17076,64712,0.9409,0.2258,0.0447,660,740,660,770,620,720,1426
+Vanderbilt University,Nashville,TN,https://www.vanderbilt.edu/,city,54158,54158,7052,65261,0.9297,0.1162,0.0674,720,770,750,800,690,770,1520
+Villanova University,Villanova,PA,https://www.villanova.edu/,suburb,57460,57460,6980,77358,0.8898,0.3066,0.0501,650,710,670,750,590,690,1406
+Wake Forest University,Winston-Salem,NC,https://www.wfu.edu/,city,57760,57760,5438,60081,0.8855,0.3198,0.0245,,,,,,,
+Washington University in St Louis,Saint Louis,MO,https://www.wustl.edu/,suburb,57386,57386,7366,64543,0.9366,0.1602,0.0807,720,760,760,800,690,770,1520
+Washington and Lee University,Lexington,VA,https://www.wlu.edu/,town,57285,57285,1820,66267,0.9378,0.2451,0.0314,670,740,680,760,650,730,1451
+Worcester Polytechnic Institute,Worcester,MA,https://www.wpi.edu/,city,54416,54416,4804,77597,0.8842,0.5905,0.1764,,,,,,,
+Yale University,New Haven,CT,https://www.yale.edu/,city,57700,57700,4701,72046,0.9771,0.0653,0.0725,720,780,740,800,710,790,1520
