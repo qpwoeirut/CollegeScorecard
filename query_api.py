@@ -10,17 +10,19 @@ SALARY_CUTOFF = 60000
 ENDPOINT = f"https://api.data.gov/ed/collegescorecard/v1/schools?api_key={API_KEY}&per_page=50"
 KEY_MAPPING = {
     "school.name": "Name",
-    "school.city": "City",
-    "school.state": "State",
     "school.school_url": "Website",
-    "school.locale": "Setting",
+    "latest.admissions.admission_rate.consumer_rate": "Admission Rate",
+    # "latest.completion.consumer_rate": "Graduation Rate",
+    "latest.earnings.6_yrs_after_entry.median": "6-year Median Salary",
+    "latest.academics.program_percentage.computer": "CS Degree %",
+
+    "latest.student.size": "Undergrad Size",
     "latest.cost.tuition.in_state": "In-state Tuition",
     "latest.cost.tuition.out_of_state": "Out-of-state Tuition",
-    "latest.student.size": "Undergrad Size",
-    "latest.earnings.6_yrs_after_entry.median": "6-year Median Salary",
-    # "latest.completion.consumer_rate": "Graduation Rate",
-    "latest.admissions.admission_rate.consumer_rate": "Admission Rate",
-    "latest.academics.program_percentage.computer": "% of CS Degrees",
+
+    "school.city": "City",
+    "school.state": "State",
+    "school.locale": "Setting",
 
     "latest.admissions.sat_scores.25th_percentile.critical_reading": "SAT 25th % Critical Reading",
     "latest.admissions.sat_scores.75th_percentile.critical_reading": "SAT 75th % Critical Reading",
@@ -141,4 +143,9 @@ def transform_school(school: dict[str,]) -> dict[str,]:
     school["Setting"] = translate_locale_value(school["Setting"])
     if not school["Website"].startswith("http"):
         school["Website"] = "https://" + school["Website"]
+    school["In-state Tuition"] = f"${school['In-state Tuition']}" if school["In-state Tuition"] else None
+    school["Out-of-state Tuition"] = f"${school['Out-of-state Tuition']}" if school["Out-of-state Tuition"] else None
+    school["6-year Median Salary"] = f"${school['6-year Median Salary']}" if school["6-year Median Salary"] else None
+    school["Admission Rate"] = f"{round(school['Admission Rate'] * 100, 2)}%" if school["Admission Rate"] else None
+    school["CS Degree %"] = f"{round(school['CS Degree %'] * 100, 2)}%" if school["CS Degree %"] else None
     return school
