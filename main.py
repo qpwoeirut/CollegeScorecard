@@ -59,7 +59,7 @@ def main():
     save_schools("ranking.csv", schools, ["US News Link"])
 
     schools = general_search()
-    save_schools("general.csv", schools, [])
+    save_schools("filter_salary_and_sat.csv", schools, [])
 
 
 if __name__ == '__main__':
