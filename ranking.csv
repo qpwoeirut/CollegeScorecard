@@ -1,28 +1,28 @@
-Name,City,State,Website,Setting,In-state Tuition,Out-of-state Tuition,Undergrad Size,6-year Median Salary,Graduation Rate,Admission Rate,% of CS Degrees,SAT 25th % Critical Reading,SAT 75th % Critical Reading,SAT 25th % Math,SAT 75th % Math,SAT 25th % Writing,SAT 75th % Writing,SAT Average
-Massachusetts Institute of Technology,Cambridge,MA,https://web.mit.edu/,city,53450,53450,4360,112623,0.9535,0.0726,0.3566,730,780,780,800,690,780,1550
-Stanford University,Stanford,CA,https://www.stanford.edu/,suburb,56169,56169,6366,88873,0.9636,0.0519,0.1797,700,770,720,800,690,780,1491
-University of California-Los Angeles,Los Angeles,CA,https://www.ucla.edu/,city,13249,43003,31636,55427,0.9246,0.1433,0.03,,,,,590,730,
-Harvard University,Cambridge,MA,https://www.harvard.edu/,city,54002,54002,6099,77816,0.9767,0.0501,0.0998,720,780,740,800,710,790,1520
-Princeton University,Princeton,NJ,https://www.princeton.edu/,city,48502,48502,4688,84713,0.974,0.0563,0.1246,710,770,740,800,710,790,1506
-University of Chicago,Chicago,IL,https://www.uchicago.edu/,city,60552,60552,7010,62671,0.9413,0.0731,0.0524,730,770,770,800,700,780,1537
-University of Pennsylvania,Philadelphia,PA,https://www.upenn.edu/,city,60042,60042,10507,80445,0.9651,0.0898,0.0712,710,770,750,800,690,780,1517
-Yale University,New Haven,CT,https://www.yale.edu/,city,57700,57700,4701,72046,0.9771,0.0653,0.0725,720,780,740,800,710,790,1520
-Rice University,Houston,TX,https://www.rice.edu/,city,51107,51107,4052,63654,0.9361,0.1089,0.1232,710,770,750,800,680,770,1533
-University of California-Berkeley,Berkeley,CA,https://www.berkeley.edu/,city,14312,44066,30796,65914,0.9295,0.1748,0.1113,650,740,660,790,630,760,1437
-University of Maryland-College Park,College Park,MD,https://www.umd.edu/,suburb,10779,36891,30214,59719,0.8257,0.5096,0.1424,630,720,640,760,,,1391
-University of California-Irvine,Irvine,CA,https://www.uci.edu/,city,13753,43507,29627,52679,0.866,0.2992,0.1068,600,680,630,750,510,620,1339
-University of California-San Diego,La Jolla,CA,https://www.ucsd.edu/,city,14648,44402,31827,56844,0.8884,0.3661,0.0586,620,710,650,770,600,710,1387
-Cornell University,Ithaca,NY,https://www.cornell.edu/,city,59282,59282,14741,78779,0.9489,0.1071,0.1282,680,750,720,790,,,1480
-University of California-Davis,Davis,CA,https://ucdavis.edu/,suburb,14597,44351,31142,54621,0.8825,0.4635,0.0342,570,670,590,730,530,650,1299
-Carnegie Mellon University,Pittsburgh,PA,https://www.cmu.edu/,city,58810,58810,6539,87824,0.8777,0.1727,0.1372,700,760,760,800,670,760,1513
-University of California-Santa Barbara,Santa Barbara,CA,https://www.ucsb.edu/,suburb,14406,44160,23166,51496,0.849,0.367,0.0217,620,710,610,750,510,630,1369
-California Institute of Technology,Pasadena,CA,https://www.caltech.edu/,city,56862,56862,901,129420,0.9253,0.0669,0.3527,740,780,790,800,730,800,1566
-Johns Hopkins University,Baltimore,MD,https://www.jhu.edu/,city,54160,54160,5752,75418,0.9317,0.1106,0.0705,720,760,750,800,670,770,1532
-University of Michigan-Ann Arbor,Ann Arbor,MI,https://umich.edu/,city,15948,52266,31189,62027,0.9248,0.2611,0.1429,660,740,680,780,640,730,1445
-The University of Texas at Austin,Austin,TX,https://www.utexas.edu/,city,11448,40032,39624,54287,0.8085,0.3195,0.0434,610,720,600,750,560,690,1349
-Georgia Institute of Technology-Main Campus,Atlanta,GA,https://www.gatech.edu/,city,12852,33964,15743,78659,0.8843,0.2134,0.1812,670,740,700,790,640,730,1465
-Purdue University-Main Campus,West Lafayette,IN,https://www.purdue.edu/,city,9992,28794,35517,54717,0.7496,0.6715,0.0933,580,680,590,740,510,630,1315
-University of Illinois Urbana-Champaign,Champaign,IL,https://www.illinois.edu/,city,15150,32600,33001,59402,0.859,0.633,0.0416,590,690,610,770,590,690,1352
-University of Washington-Seattle Campus,Seattle,WA,https://www.washington.edu/,city,11745,39114,31145,55968,0.8366,0.5586,0.0906,590,700,610,753,530,650,1341
-Ohio State University-Main Campus,Columbus,OH,https://www.osu.edu/,city,11518,33502,45862,44737,0.7747,0.6849,0.0098,590,690,620,740,560,660,1337
-University of Wisconsin-Madison,Madison,WI,https://www.wisc.edu/,city,10742,38630,31651,55313,0.8712,0.5725,0.0584,610,690,650,770,590,690,1364
+Name,City,State,Setting,In-state Tuition,Out-of-state Tuition,Undergrad Size,6-year Median Salary,Admission Rate,% of CS Degrees,SAT 25th % Critical Reading,SAT 75th % Critical Reading,SAT 25th % Math,SAT 75th % Math,SAT 25th % Writing,SAT 75th % Writing,SAT Average,US News Link
+"=HYPERLINK(""https://web.mit.edu/"", ""Massachusetts Institute of Technology"")",Cambridge,MA,city,53450,53450,4360,112623,0.0726,0.3566,730,780,780,800,690,780,1550,https://www.usnews.com/best-colleges/massachusetts-institute-of-technology-2178
+"=HYPERLINK(""https://www.stanford.edu/"", ""Stanford University"")",Stanford,CA,suburb,56169,56169,6366,88873,0.0519,0.1797,700,770,720,800,690,780,1491,https://www.usnews.com/best-colleges/stanford-university-1305
+"=HYPERLINK(""https://www.ucla.edu/"", ""University of California-Los Angeles"")",Los Angeles,CA,city,13249,43003,31636,55427,0.1433,0.03,,,,,590,730,,https://www.usnews.com/best-colleges/university-of-california-los-angeles-1315
+"=HYPERLINK(""https://www.harvard.edu/"", ""Harvard University"")",Cambridge,MA,city,54002,54002,6099,77816,0.0501,0.0998,720,780,740,800,710,790,1520,https://www.usnews.com/best-colleges/harvard-university-2155
+"=HYPERLINK(""https://www.princeton.edu/"", ""Princeton University"")",Princeton,NJ,city,48502,48502,4688,84713,0.0563,0.1246,710,770,740,800,710,790,1506,https://www.usnews.com/best-colleges/princeton-university-2627
+"=HYPERLINK(""https://www.uchicago.edu/"", ""University of Chicago"")",Chicago,IL,city,60552,60552,7010,62671,0.0731,0.0524,730,770,770,800,700,780,1537,https://www.usnews.com/best-colleges/university-of-chicago-1774
+"=HYPERLINK(""https://www.upenn.edu/"", ""University of Pennsylvania"")",Philadelphia,PA,city,60042,60042,10507,80445,0.0898,0.0712,710,770,750,800,690,780,1517,https://www.usnews.com/best-colleges/university-of-pennsylvania-3378
+"=HYPERLINK(""https://www.yale.edu/"", ""Yale University"")",New Haven,CT,city,57700,57700,4701,72046,0.0653,0.0725,720,780,740,800,710,790,1520,https://www.usnews.com/best-colleges/yale-university-1426
+"=HYPERLINK(""https://www.rice.edu/"", ""Rice University"")",Houston,TX,city,51107,51107,4052,63654,0.1089,0.1232,710,770,750,800,680,770,1533,https://www.usnews.com/best-colleges/rice-3604
+"=HYPERLINK(""https://www.berkeley.edu/"", ""University of California-Berkeley"")",Berkeley,CA,city,14312,44066,30796,65914,0.1748,0.1113,650,740,660,790,630,760,1437,https://www.usnews.com/best-colleges/university-of-california-berkeley-1312
+"=HYPERLINK(""https://www.umd.edu/"", ""University of Maryland-College Park"")",College Park,MD,suburb,10779,36891,30214,59719,0.5096,0.1424,630,720,640,760,,,1391,https://www.usnews.com/best-colleges/university-of-maryland-2103
+"=HYPERLINK(""https://www.uci.edu/"", ""University of California-Irvine"")",Irvine,CA,city,13753,43507,29627,52679,0.2992,0.1068,600,680,630,750,510,620,1339,https://www.usnews.com/best-colleges/university-of-california-irvine-1314
+"=HYPERLINK(""https://www.ucsd.edu/"", ""University of California-San Diego"")",La Jolla,CA,city,14648,44402,31827,56844,0.3661,0.0586,620,710,650,770,600,710,1387,https://www.usnews.com/best-colleges/university-of-california-san-diego-1317
+"=HYPERLINK(""https://www.cornell.edu/"", ""Cornell University"")",Ithaca,NY,city,59282,59282,14741,78779,0.1071,0.1282,680,750,720,790,,,1480,https://www.usnews.com/best-colleges/cornell-university-2711
+"=HYPERLINK(""https://ucdavis.edu/"", ""University of California-Davis"")",Davis,CA,suburb,14597,44351,31142,54621,0.4635,0.0342,570,670,590,730,530,650,1299,https://www.usnews.com/best-colleges/university-of-california-davis-1313
+"=HYPERLINK(""https://www.cmu.edu/"", ""Carnegie Mellon University"")",Pittsburgh,PA,city,58810,58810,6539,87824,0.1727,0.1372,700,760,760,800,670,760,1513,https://www.usnews.com/best-colleges/carnegie-mellon-university-3242
+"=HYPERLINK(""https://www.ucsb.edu/"", ""University of California-Santa Barbara"")",Santa Barbara,CA,suburb,14406,44160,23166,51496,0.367,0.0217,620,710,610,750,510,630,1369,https://www.usnews.com/best-colleges/university-of-california-santa-barbara-1320
+"=HYPERLINK(""https://www.caltech.edu/"", ""California Institute of Technology"")",Pasadena,CA,city,56862,56862,901,129420,0.0669,0.3527,740,780,790,800,730,800,1566,https://www.usnews.com/best-colleges/california-institute-of-technology-1131
+"=HYPERLINK(""https://www.jhu.edu/"", ""Johns Hopkins University"")",Baltimore,MD,city,54160,54160,5752,75418,0.1106,0.0705,720,760,750,800,670,770,1532,https://www.usnews.com/best-colleges/jhu-2077
+"=HYPERLINK(""https://umich.edu/"", ""University of Michigan-Ann Arbor"")",Ann Arbor,MI,city,15948,52266,31189,62027,0.2611,0.1429,660,740,680,780,640,730,1445,https://www.usnews.com/best-colleges/university-of-michigan-ann-arbor-9092
+"=HYPERLINK(""https://www.utexas.edu/"", ""The University of Texas at Austin"")",Austin,TX,city,11448,40032,39624,54287,0.3195,0.0434,610,720,600,750,560,690,1349,https://www.usnews.com/best-colleges/university-of-texas-at-austin-3658
+"=HYPERLINK(""https://www.gatech.edu/"", ""Georgia Institute of Technology-Main Campus"")",Atlanta,GA,city,12852,33964,15743,78659,0.2134,0.1812,670,740,700,790,640,730,1465,https://www.usnews.com/best-colleges/georgia-institute-of-technology-1569
+"=HYPERLINK(""https://www.purdue.edu/"", ""Purdue University-Main Campus"")",West Lafayette,IN,city,9992,28794,35517,54717,0.6715,0.0933,580,680,590,740,510,630,1315,https://www.usnews.com/best-colleges/purdue-university-west-lafayette-1825
+"=HYPERLINK(""https://www.illinois.edu/"", ""University of Illinois Urbana-Champaign"")",Champaign,IL,city,15150,32600,33001,59402,0.633,0.0416,590,690,610,770,590,690,1352,https://www.usnews.com/best-colleges/university-of-illinois-urbanachampaign-1775
+"=HYPERLINK(""https://www.washington.edu/"", ""University of Washington-Seattle Campus"")",Seattle,WA,city,11745,39114,31145,55968,0.5586,0.0906,590,700,610,753,530,650,1341,https://www.usnews.com/best-colleges/university-of-washington-3798
+"=HYPERLINK(""https://www.osu.edu/"", ""Ohio State University-Main Campus"")",Columbus,OH,city,11518,33502,45862,44737,0.6849,0.0098,590,690,620,740,560,660,1337,https://www.usnews.com/best-colleges/ohio-state-6883
+"=HYPERLINK(""https://www.wisc.edu/"", ""University of Wisconsin-Madison"")",Madison,WI,city,10742,38630,31651,55313,0.5725,0.0584,610,690,650,770,590,690,1364,https://www.usnews.com/best-colleges/university-of-wisconsin-3895
