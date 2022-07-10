@@ -51,15 +51,22 @@ def save_schools(filename: str, schools: dict[str, dict[str,]], additional_field
 
 
 def main():
-    with open("school_list.csv") as f:
+    with open("parents_list.csv") as f:
         reader = csv.DictReader(f)
         school_dict = {row["Name"]: row["US N&W ID"] for row in reader}
     schools = search_from_list(list(school_dict.keys()))
     schools = add_us_news_link(school_dict, schools)
-    save_schools("ranking.csv", schools, ["US News Link"])
+    save_schools("parents.csv", schools, ["US News Link"])
 
     schools = general_search()
     save_schools("filter_salary_and_sat.csv", schools, [])
+
+    with open("rankings_list.csv") as f:
+        reader = csv.DictReader(f)
+        school_dict = {row["Name"]: row["US N&W ID"] for row in reader}
+    schools = search_from_list(list(school_dict.keys()))
+    schools = add_us_news_link(school_dict, schools)
+    save_schools("rankings.csv", schools, ["US News Link"])
 
 
 if __name__ == '__main__':
