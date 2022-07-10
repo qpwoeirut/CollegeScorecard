@@ -13,9 +13,7 @@ Name,Admission Rate,6-year Median Salary,CS Degree %,Undergrad Size,In-state Tui
 "=HYPERLINK(""https://www.cornell.edu/"", ""Cornell University"")",10.71%,$78779,12.82%,14741,$59282,$59282,Ithaca,NY,city,680,750,720,790,,,1480
 "=HYPERLINK(""https://www.dartmouth.edu/"", ""Dartmouth College"")",9.22%,$70635,8.88%,4146,$60117,$60117,Hanover,NH,town,710,770,730,790,670,780,1500
 "=HYPERLINK(""https://www.duke.edu/"", ""Duke University"")",7.74%,$77260,12.13%,6650,$57633,$57633,Durham,NC,city,720,770,750,800,690,780,1530
-"=HYPERLINK(""https://worldwide.erau.edu/"", ""Embry-Riddle Aeronautical University-Worldwide"")",62.72%,$62242,9.54%,10070,$10296,$10296,Daytona Beach,FL,city,,,,,,,
 "=HYPERLINK(""https://www.emory.edu/"", ""Emory University"")",19.17%,$61633,1.86%,6978,$53868,$53868,Atlanta,GA,city,680,740,700,790,640,730,1459
-"=HYPERLINK(""https://www.excelsior.edu/"", ""Excelsior College"")",100%,$61752,1.07%,19624,,,Albany,NY,city,,,,,,,
 "=HYPERLINK(""https://www.gwu.edu/"", ""George Washington University"")",43.04%,$62584,5.16%,11106,$58640,$58640,Washington,DC,city,640,720,630,730,600,690,1385
 "=HYPERLINK(""https://www.georgetown.edu/"", ""Georgetown University"")",16.81%,$71107,2.21%,7119,$57928,$57928,Washington,DC,city,690,760,690,790,,,1473
 "=HYPERLINK(""https://www.gatech.edu/"", ""Georgia Institute of Technology-Main Campus"")",21.34%,$78659,18.12%,15743,$12852,$33964,Atlanta,GA,city,670,740,700,790,640,730,1465
@@ -32,7 +30,6 @@ Name,Admission Rate,6-year Median Salary,CS Degree %,Undergrad Size,In-state Tui
 "=HYPERLINK(""https://www.neumont.edu/"", ""Neumont College of Computer Science"")",90.69%,$69186,100%,529,$25440,$25440,Salt Lake City,UT,city,,,,,,,
 "=HYPERLINK(""https://www.nyu.edu/"", ""New York University"")",21.09%,$60407,7.35%,27276,$54880,$54880,New York,NY,city,670,740,700,800,630,730,1458
 "=HYPERLINK(""https://www.northeastern.edu/"", ""Northeastern University"")",20.48%,$65632,8.02%,15130,$55452,$55452,Boston,MA,city,690,750,720,790,640,730,1492
-"=HYPERLINK(""https://www.northeastern.edu/"", ""Northeastern University Professional Programs"")",,$65632,7.26%,2004,,,Boston,MA,city,,,,,,,
 "=HYPERLINK(""https://www.northwestern.edu/"", ""Northwestern University"")",9.31%,$67867,6.13%,8401,$58701,$58701,Evanston,IL,city,700,760,730,790,680,770,1505
 "=HYPERLINK(""https://www.princeton.edu/"", ""Princeton University"")",5.63%,$84713,12.46%,4688,$48502,$48502,Princeton,NJ,city,710,770,740,800,710,790,1506
 "=HYPERLINK(""https://www.providence.edu/"", ""Providence College"")",53.86%,$62565,1.05%,4242,$54388,$54388,Providence,RI,city,610,680,600,680,,,1301

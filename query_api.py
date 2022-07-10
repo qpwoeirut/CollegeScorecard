@@ -85,6 +85,7 @@ def get_school_list(filters: dict[str,]) -> list[dict[str,]]:
             "school.school_url",
             "school.type",
             "school.locale",
+            "school.online_only", "school.main_campus",
 
             "latest.cost.tuition.in_state", "latest.cost.tuition.out_of_state",
 
@@ -116,6 +117,13 @@ def filter_schools(schools: list[dict[str,]]) -> list[dict[str,]]:
     for school in schools:  # could be done with a list comprehension, but using loops allows for printing stuff out
         if school["latest.academics.program_percentage.computer"] == 0:
             # print(f"Filtered {school['school.name']}.".ljust(70, '.') + " no Bachelors program for CS")
+            continue
+
+        if school["school.online_only"] == 1:
+            # print(f"Filtered {school['school.name']}.".ljust(70, '.') + " online only")
+            continue
+        if school["school.main_campus"] == 0:
+            # print(f"Filtered {school['school.name']}.".ljust(70, '.') + " not main campus")
             continue
 
         median_earnings_6_yrs = school["latest.earnings.6_yrs_after_entry.median"]

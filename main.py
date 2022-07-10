@@ -23,10 +23,10 @@ def search_from_list(names: list[str]) -> dict[str, dict[str,]]:
     return schools
 
 
-def print_schools(schools: list[dict[str,]]):
+def print_schools(schools: dict[str, dict[str,]]):
     print(f"Total schools: {len(schools)}\n\n")
-    for school in schools:
-        print(school["Name"] if "Name" in school else school["school.name"])
+    for name, school in schools.items():
+        print(name)
         for k, v in school.items():
             print(f"{k}: {v}")
         print('=' * 80, '\n')
